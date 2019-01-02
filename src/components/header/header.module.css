@@ -1,0 +1,72 @@
+.header {
+  background-color: rgb(211, 58, 44);
+}
+
+.headerLink {
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+  text-shadow: 1px 1px 1px rgba(0,0,0,.3);
+  transition: all .2s ease-out;
+}
+
+.headerNav {
+  padding: 20px;
+}
+
+.headerUl {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.headerNavIcon {
+  display: block;
+  margin: 0 auto;
+  width: 25px;
+  height: 29px;
+  will-change: transform;
+  transform-origin: 0 100%;
+  transform: rotate(-11deg);
+  transition: transform .2s ease-out;
+}
+
+.headerNavTitle {
+  margin-top: 8px;
+}
+
+.headerNavIconShadow {
+  margin: 0 auto;
+  display: block;
+  position: relative;
+}
+
+.headerNavIconShadow::after {
+  content: '';
+  display: inline-block;
+  width: 46%;
+  left: 29%;
+  bottom: -25%;
+  position: absolute;
+  height: 10px;
+  background-image: url(../../images/shadow.png);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  transition: all .1s ease-out;
+  transform-origin: 30% 50%;
+  pointer-events: none;
+}
+
+.headerLink:hover {
+  color: black;
+  text-decoration: none;
+}
+
+.headerLink:hover .headerNavIconShadow::after {
+  opacity: 0;
+}
+
+.headerLink:hover .headerNavIcon {
+  transform: rotate(0deg);
+}
