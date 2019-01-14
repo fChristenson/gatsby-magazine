@@ -3,6 +3,17 @@
   padding: 0;
 }
 
+:root {
+  --bg-color-red: rgb(211, 58, 44);
+  --bg-color-dark-red: #811d15;
+  --bg-color-recent-article-first: #BC3427;
+  --bg-color-recent-article-second: #C7372A;
+  --bg-color-recent-article-third: #b13125;
+  --bg-color-recent-article-fourth: #bc3428;
+  --color-red: #811d15;
+}
+
 body {
   font-family: Roboto;
+  min-width: 1024px;
 }
