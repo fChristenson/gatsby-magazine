@@ -6,11 +6,16 @@
 :root {
   --bg-color-red: rgb(211, 58, 44);
   --bg-color-dark-red: #811d15;
+  --bg-color-gray: #F6F3F2;
   --bg-color-recent-article-first: #BC3427;
   --bg-color-recent-article-second: #C7372A;
   --bg-color-recent-article-third: #b13125;
   --bg-color-recent-article-fourth: #bc3428;
+  --bg-color-blue: #2DA2C5;
+  --color-blue: var(--bg-color-blue);
   --color-red: #811d15;
+  --color-light-red: var(--bg-color-red);
+  --color-gray: #666;
 }
 
 body {

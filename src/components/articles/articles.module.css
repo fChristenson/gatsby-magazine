@@ -1,0 +1,100 @@
+.articles {
+  background-color: var(--bg-color-gray);
+  padding: 32px 64px;
+}
+
+.articlesList {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.articleItem {
+  flex: 0 0 calc(100% / 3);
+  cursor: pointer;
+  position: relative;
+  transition: all 0.2s ease-in-out;
+}
+
+.articleItemContainer {
+  padding: 18px;
+  z-index: 1;
+  position: relative;
+}
+
+.articleItem:hover {
+  z-index: 2;
+  transform: scale(1.02);
+}
+
+.articleItem::before {
+  transition: all 0.2s ease-in-out;
+  content: '';
+  display: block;
+  width: calc(100% - 30px);
+  height: calc(100% - 60px);
+  content: "";
+  position: absolute;
+  left: -15px;
+  top: 0;
+  background-color: transparent;
+  padding: 30px;
+}
+
+.articleLink {
+  text-decoration: none;
+  color: black;
+}
+
+.articleItem:hover::before {
+  box-shadow: 0 0 40px rgba(0,0,0,0.15);
+  background-color: white;
+}
+
+.articleItem:hover .articleTitle {
+  color: var(--color-light-red);
+}
+
+.articleTime {
+  color: var(--color-gray);
+}
+
+.articleTitle {
+  padding: 8px 0;
+}
+
+.articleAuthorContainer {
+  padding: 12px 0 24px;
+  color: var(--color-gray);
+}
+
+.articleAuthorLink {
+  font-weight: bolder;
+  color: var(--color-gray);
+}
+
+.articleAuthorLink:hover {
+  color: black;
+}
+
+.articleItem:hover .articleItemArrow {
+  background-color: var(--bg-color-blue);
+  color: white;
+}
+
+.articleItemArrow {
+  display: inline-block;
+  transition: all 0.2s ease-in-out;
+  font-size: 24px;
+  text-decoration: none;
+  padding: 36px;
+  transform: translateX(-15px);
+  z-index: 1;
+  position: relative;
+  color: var(--color-blue);
+}
+
+.articleDescription {
+  line-height: 32px;
+  padding-bottom: 84px;
+}
